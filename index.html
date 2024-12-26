@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK, PAPER, SCISSOR</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <section class="ScoreBar" id="ScoreBar">
+        <div class="scoreConatiner">
+            <div class="titles">
+                <span class="rockTitle">ROCK</span>
+                <span class="paperTitle">PAPER</span>
+                <span class="scissorTitle">SCISSOR</span>
+            </div>
+            <div class="scoreCard">
+                <div class="computerScoreContainer">
+                    <span class="pcScoreTitle-1">COMPUTER</span>
+                    <span class="pcScoreTitle-2">SCORE</span>
+                    <span class="currentScoreOfPC pcScoreTitle" id="PcScoreUpdate">0</span>
+                </div>
+                <div class="yourScoreContainer">
+                    <span class="yourScoreTitle-1">YOUR</span>
+                    <span class="yourScoreTitle-2">SCORE</span>
+                    <span class="currentScoreOfUser yourScoreTitle" id="UserScoreUpdate">0</span>
+                </div>
+            </div>         
+        </div>
+    </section>
+    <section class="options-container" id="Triangle">
+        <div class="rockAndScissorConatiner">
+            <div class="blue">
+                <button class="rockBtn" id="rockButton">
+                    <img src="images/fist.png" alt="" class="rockImg">
+                </button>
+            </div>
+            <div class="purple">
+                <button class="scissorBtn" id="scissorButton">
+                    <img src="images/peace-sign.png" alt="" class="scissorImg">
+                </button>
+            </div>
+        </div>
+        <div class="orange">
+            <button class="paperBtn" id="paperButton">
+                <img src="images/palm-of-hand.png" alt="" class="paperImg">
+            </button>
+       </div>
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+    </section>
+    <section class="GameRulesConatiner" id="RulesContainer">
+        <div class="Game-Rules">
+                <div class="heading-1">
+                    <span>Game Rules</span>
+                </div>
+                <ul class="gameRules">
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <li>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or just "rock, paper, scissors."</li>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+                    <li>If both players lay down the same hand, each player lays down another hand.</li>
+                </ul>
+                <button class="closeRulesBtn" id="4">X</button>
+        </div>    
+        <button class="openRulesBtn" id="5">RULES</button>
+    </section>
+    <section class="resultFrame-1" id="Result">
+        <div class="UserandPcPickedText">
+            <div class="youPicked">YOU PICKED</div>
+            <div class="PcPicked">PC PICKED</div>
+        </div>
+        <div class="UserAndPcConatiner">
+            <div class="userParentDiv">
+                <div class="userColor">
+                    <div class="userDiv" id="userDiv">
+                        <img class="userImg" src="" alt="User Choice">
+                    </div>
+                </div>
+            </div>
+            <div class="resultDisplay">
+                <span class="result-text-1"></span>
+                <span class="result-text-2">AGAINST PC</span>
+                <button class="gameButton">PLAY AGAIN</button>
+            </div>
+            <div class="pcParentDiv">
+                <div class="pcColor">
+                    <div class="pcDiv" id="pcDiv">
+                        <img class="pcImg" src="" alt="PC Choice">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <button class="nextButton">NEXT</button>
+
+    </section>
+    <section class="FinalPage">
+        <div class="resultFrame-2">
+        <div class="starsDiv">
+            <img src="images/Group 5.png" alt="stars img" class="stars">
+        </div>
+        <div class="trophyDiv">
+            <img src="images/Vector.png" alt="trophy">
+        </div>
+            <h1 class="hurray-1">HURRAY!!</h1>
+            <h3 class="hurray-2">YOU WON THE GAME</h3>
+            <button class="hurrayGameButton">PLAY AGAIN</button>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
